@@ -13,6 +13,10 @@ class WaterError(GardenError):
 
 
 class Plant:
+
+    '''Plant class about plant's name, plant's watering and
+       level of sunlight it has gotten'''
+
     def __init__(self, name: str, water: int, sun: int) -> None:
         self.a1 = name
         self.a2 = water
@@ -20,6 +24,10 @@ class Plant:
 
 
 class GardenManager:
+
+    '''GardenManager manages a garden by adding plants, watering them and
+       checking health and raises error if needed'''
+
     def __init__(self) -> None:
         self.plants = []
         self.tank = 10
@@ -72,6 +80,10 @@ class GardenManager:
 
 
 def test_garden_management() -> None:
+
+    '''test_garden_management() create a garden, adds plants,
+       waters and checks the health of them, and test error recovery'''
+
     print("=== Garden Management System ===\n")
 
     print("Adding plants to garden...")

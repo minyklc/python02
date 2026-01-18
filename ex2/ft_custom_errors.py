@@ -13,6 +13,12 @@ class WaterError(GardenError):
 
 
 def garden_operations() -> None:
+
+    '''garden_operations() tests custom errors about
+       the state of the plant and the amount of wtaer in the tank.
+       for PlantError, the state of the plants is determined
+       by the age of them in day, and the amount of tank's water in L'''
+
     print("=== Custom Garden Errors Demo ===\n")
 
     print("Testing PlantError...")

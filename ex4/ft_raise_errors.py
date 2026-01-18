@@ -1,6 +1,11 @@
 #!/usr/bin/env python3
 
 def test_plant_checks() -> None:
+
+    '''test_plant_checks() sends in parameters to check_plant_health()
+       various datas about plants, including bad datas like empty name,
+       bad water level and bad sunlight hours (too low or high)'''
+
     print("=== Garden Plant Health Checker ===\n")
 
     print("Testing good values...")
@@ -24,6 +29,8 @@ def test_plant_checks() -> None:
 
 def check_plant_health(plant_name: str, water_level: int,
                        sunlight_hours: int) -> None:
+    '''check_plant_health() raises errors when empty name,
+       bad water level or bad sunlight hours (too low or high)'''
     try:
         if plant_name is None:
             raise ValueError("Error: Plant name cannot be empty!")

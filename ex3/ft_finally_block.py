@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 
 def test_watering_system() -> None:
+
+    '''test_watering_system() sends in parameter to water_plants()
+       a good garden and an invalid garden'''
+
     print("=== Garden Watering System ===\n")
 
     print("Testing normal watering...")
@@ -15,6 +19,11 @@ def test_watering_system() -> None:
 
 
 def water_plants(plant_list: tuple | list) -> None:
+
+    '''water_plants() checks for each plants in the garden
+       if the name is a valid name, invalid name is an empty name (None),
+       and the watering system is then closed.'''
+
     print("Opening watering system")
     try:
         for plant in plant_list:
